@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Sweet Bites - Pedido por WhatsApp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">Sweet Bites</div>
+    <div class="slogan">¡Los mejores crepes personalizados de la ciudad!</div>
+  </header>
+
+  <section class="hero">
+    <img src="./img/Copilot_20250814_172623.png" alt="Crepes deliciosos" class="hero__bg">
+    <div class="hero__content">
+      <h1>¡Sweet Bites - Los mejores Crepes!</h1>
+      <p>Elige tus toppings favoritos y disfruta de un sabor único. ¡Ordena ahora y recibe en casa!</p>
+      <div class="pill-row">
+        <span class="pill">Servicio a domicilio</span>
+        <span class="pill">Pago contra entrega</span>
+        <span class="pill">Pago por Nequi</span>
+      </div>
+    </div>
+  </section>
+
+  <main class="wrap">
+    <nav class="filters" id="filters"></nav>
+    <section class="grid" id="productGrid"></section>
+  </main>
+
+  <!-- FAB Carrito -->
+  <button class="fab" id="fab" aria-label="Abrir carrito"><i class="fa-solid fa-cart-shopping"></i><span class="badge"
+      id="badge">0</span></button>
+
+  <!-- Panel Carrito -->
+  <aside class="cart" id="cart" aria-hidden="true">
+    <div class="cart__head">
+      <h3 class="cart__title">Tu pedido</h3>
+      <div class="cart__actions">
+        <button class="iconbtn" id="keepShopping">⬅ Seguir comprando</button>
+        <button class="iconbtn" id="closeCart" aria-label="Ocultar carrito">✕</button>
+      </div>
+    </div>
+    <ul class="cart__list" id="listaCarrito" role="list"></ul>
+    <div class="cart__footer">
+      <div class="total"><span>Total</span><span id="total">$0</span></div>
+      <div class="row">
+        <input class="input" id="nombre" placeholder="Nombre completo" autocomplete="name" />
+        <input class="input" id="telefono" placeholder="Teléfono" inputmode="tel" autocomplete="tel" />
+        <input class="input" id="direccion" placeholder="Dirección" autocomplete="street-address" />
+      </div>
+      <button class="btn btn--whatsapp" id="sendWhatsapp">Enviar pedido a WhatsApp</button>
+    </div>
+    <div class="cart__safearea"></div>
+  </aside>
+
+  <!-- Modal de opciones -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="modalProducto">
+      <div class="modal__head">
+        <strong id="modalProducto">Producto</strong>
+        <button class="iconbtn" id="closeModal">✕</button>
+      </div>
+      <div class="modal__body">
+        <div>
+          <label for="modalTamano">Tamaño</label>
+          <select id="modalTamano"></select>
+        </div>
+        <div>
+          <label>Toppings</label>
+          <div class="opt-list" id="toppingsList"></div>
+        </div>
+      </div>
+      <div class="modal__footer">
+        <button class="btn" id="cancelModal">Cancelar</button>
+        <button class="btn btn--primary" id="addToCart">Agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

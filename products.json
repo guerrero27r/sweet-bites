@@ -1,0 +1,150 @@
+[
+  {
+    "id": "crp-01",
+    "name": "Crepe Nutella",
+    "category": "Crepes",
+    "description": "Clásico con crema de avellanas.",
+    "basePrice": 7000,
+    "sizes": [
+      {
+        "name": "Personal",
+        "add": 0
+      },
+      {
+        "name": "Grande",
+        "add": 3000
+      }
+    ],
+    "toppings": [
+      {
+        "name": "Fresas",
+        "add": 1500
+      },
+      {
+        "name": "Banano",
+        "add": 1200
+      },
+      {
+        "name": "Chantilly",
+        "add": 1000
+      }
+    ],
+    "image": "./img/crepe1.jpg"
+  },
+  {
+    "id": "crp-02",
+    "name": "Crepe Mixto",
+    "category": "Crepes",
+    "description": "Fresas + banano + sirope.",
+    "basePrice": 7500,
+    "sizes": [
+      {
+        "name": "Personal",
+        "add": 0
+      },
+      {
+        "name": "Grande",
+        "add": 3500
+      }
+    ],
+    "toppings": [
+      {
+        "name": "Nutella",
+        "add": 2000
+      },
+      {
+        "name": "Arequipe",
+        "add": 1500
+      },
+      {
+        "name": "Chispas",
+        "add": 800
+      }
+    ],
+    "image": "./img/crepe1.jpg"
+  },
+  {
+    "id": "gal-01",
+    "name": "Galleta Choco Chips",
+    "category": "Galletas",
+    "description": "Crujiente por fuera, suave por dentro.",
+    "basePrice": 5000,
+    "sizes": [
+      {
+        "name": "Personal",
+        "add": 0
+      },
+      {
+        "name": "Grande",
+        "add": 2000
+      }
+    ],
+    "toppings": [
+      {
+        "name": "Nutella",
+        "add": 2000
+      },
+      {
+        "name": "Chantilly",
+        "add": 1000
+      }
+    ],
+    "image": "./img/galleta1.jpg"
+  },
+  {
+    "id": "beb-01",
+    "name": "Limonada",
+    "category": "Bebidas",
+    "description": "Refrescante y natural.",
+    "basePrice": 4000,
+    "sizes": [
+      {
+        "name": "Vaso 12oz",
+        "add": 0
+      },
+      {
+        "name": "Vaso 16oz",
+        "add": 1000
+      }
+    ],
+    "toppings": [
+      {
+        "name": "Hierbabuena",
+        "add": 500
+      },
+      {
+        "name": "Gaseosa",
+        "add": 0
+      }
+    ],
+    "image": "./img/bebida1.jpg"
+  },
+  {
+    "id": "snk-01",
+    "name": "Papitas Rústicas",
+    "category": "Snacks",
+    "description": "Crocantes y sazonadas.",
+    "basePrice": 6000,
+    "sizes": [
+      {
+        "name": "Personal",
+        "add": 0
+      },
+      {
+        "name": "Compartir",
+        "add": 2000
+      }
+    ],
+    "toppings": [
+      {
+        "name": "Queso rallado",
+        "add": 1200
+      },
+      {
+        "name": "Tocineta",
+        "add": 1800
+      }
+    ],
+    "image": "./img/snack1.jpg"
+  }
+]
