@@ -445,3 +445,38 @@ select {
   outline: 2px dashed #fff;
   outline-offset: 2px
 }
+
+.footer {
+  background: linear-gradient(90deg, var(--color-principal), var(--color-secundario));
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.footer .brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.footer .tagline {
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.footer .footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.footer .copy {
+  font-size: 0.8rem;
+  margin-top: 1.2rem;
+  opacity: 0.8;
+}
