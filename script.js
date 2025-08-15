@@ -3,7 +3,7 @@ const STATE = {
   productoActual: null,
   productos: [],
   categoria: 'Todos',
-  numeroWhatsApp: '573015541060', // <-- Cambia por tu número con indicativo
+  numeroWhatsApp: '573206360192', // <-- Cambia por tu número con indicativo
 };
 
 const fmtCOP = (n) =>
