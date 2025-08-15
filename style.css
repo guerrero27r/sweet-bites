@@ -119,7 +119,8 @@ body {
   border: 1px solid rgba(255, 255, 255, .15);
   padding: 8px 12px;
   border-radius: 999px;
-  cursor: pointer
+  cursor: pointer;
+  color: #fff;
 }
 
 .filter.active {
